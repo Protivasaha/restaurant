@@ -1,6 +1,7 @@
 import SectionHeading from "../../Components/SectionHeading";
 import Banner from "./Banner";
 import Catagory from "./Catagory";
+import Menu from "./Menu";
 
 const Home = () => {
   return (
@@ -13,6 +14,13 @@ const Home = () => {
 
       </SectionHeading>
       <Catagory></Catagory>
+      <SectionHeading 
+    title="Check it out"
+    heading="FROM OUR MENU"
+    >
+
+      </SectionHeading>
+      <Menu></Menu>
     </div>
   );
 };
