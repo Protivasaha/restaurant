@@ -2,6 +2,7 @@ import SectionHeading from "../../Components/SectionHeading";
 import Banner from "./Banner";
 import Catagory from "./Catagory";
 import Menu from "./Menu";
+import Reviews from "./Reviews";
 
 const Home = () => {
   return (
@@ -21,6 +22,11 @@ const Home = () => {
 
       </SectionHeading>
       <Menu></Menu>
+      <SectionHeading
+      title="---What Our Clients Say---"
+      heading="TESTIMONIALS"
+      ></SectionHeading>
+      <Reviews></Reviews>
     </div>
   );
 };
