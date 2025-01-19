@@ -5,6 +5,7 @@ import "./Login.css"
 import { CiFacebook } from "react-icons/ci";
 import { FaGoogle } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import logo from "../../assets/logo.png";
 
 const Login = () => {
   const {
@@ -16,7 +17,12 @@ const Login = () => {
   
   const onSubmit = (data) => console.log(data)
   return (
-    <div className="flex bg-img">
+    <div className="bg-img">
+      <Link to="/">
+      <img className="w-16 ml-24" src={logo} alt="navlogo"/>
+      </Link>
+
+      <div className="flex h-screen justify-center gap-40  ">
       <div>
 <img src={login} alt="" />
       </div>
@@ -54,6 +60,7 @@ const Login = () => {
       </button>
     </div>
       </div>
+    </div>
     </div>
   );
 };
