@@ -6,6 +6,10 @@ import Contact from "../pages/contact/contact";
 import OurMenu from "../pages/ourMenu/ourMenu";
 import OurShop from "../pages/ourShop/ourShop";
 import Signup from "../pages/signup/Signup";
+import DashBoard from "../Layout/DashBoard";
+import Cart from "../pages/dashboard/cart/Cart";
+import UserProfile from "../Layout/UserProfile";
+import ToDo from "../pages/dashboard/todo/todo";
     
 const router = createBrowserRouter([
     {
@@ -37,6 +41,26 @@ const router = createBrowserRouter([
                 element: <OurShop></OurShop>
             },
           
+        ]
+    },
+    {
+        path:"/dashboard",
+        element: <DashBoard></DashBoard>,
+        children: [
+
+            {
+                path:"cart",
+                element:<Cart></Cart>
+            },
+            {
+                path:"userProfile",
+                element:<UserProfile></UserProfile>
+            },
+            {
+                path:"todo",
+                element:<ToDo></ToDo>
+            }
+            
         ]
     }
 ]);
