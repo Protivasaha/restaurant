@@ -18,6 +18,7 @@ const OurShopCard = ({food}) => {
       name,
       image,
       price,
+      recipe
       }
      axiosPublic.post('/carts', foodData) 
      .then(res=>{

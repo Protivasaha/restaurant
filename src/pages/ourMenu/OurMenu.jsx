@@ -14,7 +14,7 @@ const OurMenu = () => {
   const salad = menu.filter(food=> food.category === "salad");
   const soup = menu.filter(food=> food.category === "soup");
 
-  console.log(popular, dessert, pizza, salad, soup)
+ 
   return (
     <div>
       <CoverImage
